@@ -1,0 +1,17 @@
+</div><!-- container -->
+<hr />
+
+<footer align="center">
+    <a href="http://www.rackspace.com/cloud/queues/">Cloud Queues</a> a product of <a href="http://www.rackspace.com">Rackspace</a>, the OpenCloud company.
+</footer>
+
+</div><!--/.fluid-container-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="static/js/jquery-1.10.2.min.js"></script>
+    <script src="static/bootstrap-3.0.2/js/bootstrap.min.js"></script>
+    <script src="static/bootstrap-3.0.2/js/holder.js"></script>
+</body>
+</html>

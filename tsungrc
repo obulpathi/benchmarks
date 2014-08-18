@@ -1,0 +1,3 @@
+export REGION=reg
+export TENANT_ID=tenant_id
+export AUTH_TOKEN=auth_token

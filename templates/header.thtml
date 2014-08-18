@@ -1,0 +1,71 @@
+<!--
+Template : black
+Source : https://github.com/rodo/tsung-templates/tree/master/black
+Version : 1.0.0
+Author : Rodolphe Quiédeville <rodolphe@quiedeville.org>
+-->
+[% USE date %]
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tsung report">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>[% title %] - [% subtitle %] </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/bootstrap-3.0.2/css/bootstrap.css" rel="stylesheet" />
+    <!-- Bootstrap theme -->
+    <link href="static/bootstrap-3.0.2/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="static/js/dygraph-combined.js"></script>
+
+    <style type="text/css">
+    body {
+      padding-top: 50px;
+    }
+    </style>
+
+  </head>
+
+  <body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="http://benchmarks.cldqs.com/">Cloud Queues </a>
+        </div>
+        <div class="navbar-collapse collapse">
+
+          <p class="navbar-text pull-right">
+            Generated : [% date.format %] UTC
+          </p>
+
+          <ul class="nav navbar-nav">
+            <li><a href="report.html">Statistics</a></li>
+            <li><a href="graph.html">Charts</a></li>
+	        [% IF os_mon %]
+            <li><a href="monitoring.html">Monitoring</a></li>
+	        [% END %]
+            <li><a href="urlerrors.html">Errors</a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="datas.html">Raw data</a></li>
+	            <li><a href="[% conf %]">XML Config file</a></li>
+              </ul>
+            </li>
+            <!-- <li><a href="about.html">About</a></li> -->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container theme-showcase">
