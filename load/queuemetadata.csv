@@ -1,0 +1,14 @@
+{}
+{}
+{"title": "Sample Konfabulator Widget", "name": "main_window", "width": 500, "height": 500}
+{}
+{}
+{ "src": "Images/Sun.png", "name": "sun1","hOffset": 250,"vOffset": 250,"alignment": "center"}
+{}
+{}
+{ "game_id": "a34904d6-8dbc-11e2-864b-5d361e90beb5"}
+{ "taglib-uri": "cofax.tld", "taglib-location": "/WEB-INF/tlds/cofax.tld"}
+{}
+{}
+{}
+{}
